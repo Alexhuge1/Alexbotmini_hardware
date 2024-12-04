@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+
+*/bin/
+*/build/
+*/log/
+
+*.log
+*.pyc

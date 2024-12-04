@@ -1,0 +1,99 @@
+<!--
+  KeyShotXR
+  (c) Copyright 2012-2017 Luxion ApS - All Rights Reserved.
+
+  Instructions for deploying KeyShotXR to a website and sharing via email.
+-->
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>KeyShotXR instructions</title>
+    <style>
+
+      *, html, body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        color: #666666;
+      }
+
+      .code {
+        display: inline-block;
+        padding: 5px;
+        border: 1px solid #ccc;
+        color: #B0B0B0;
+        background-color: #173C47;
+        border-radius: 3px;
+      }
+
+      .overlay {
+        position: absolute;
+        display: inline-block;
+        width: 1921px; /* same width as iframe below */
+        height: 1052px; /* same height as iframe below */
+        pointer-events: none;
+      }
+
+      .c-tag {
+        color: #B38D36;
+      }
+
+      .c-attribute {
+        color: #48B093;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Instructions for sharing KeyShotXR</h2>
+    <p>Below is your KeyShotXR. To view the KeyShotXR by itself open the <i><a href="keyshot.23.html">keyshot.23.html</a></i> file in the <i>keyshot.23</i> folder.</p>
+    <div style="max-width: 1921px; max-height: 1052px;">
+      <div class="overlay" id="overlay">&nbsp;</div>
+      <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 54.7631%; overflow: hidden;">
+        <iframe src="keyshot.23.html"
+                allowfullscreen
+                style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
+                frameborder="0"
+                scrolling="no">
+        </iframe>
+      </div>
+    </div>
+    <h2>Uploading to and displaying on your website:</h2>
+    <p>Upload the 'keyshot.23' folder with all of its contents to your webserver. Copy
+    (Ctrl-C/Cmd-C) and Paste (Ctrl-V/Cmd-V) the code below to your webpage.
+    <br>
+    <br>
+    <b>[Code]:</b>
+    <pre class="code">&lt;<span class="c-tag">div</span> style=<span class="c-attribute">"max-width: 1921px; max-height: 1052px;"</span>&gt;
+  &lt;<span class="c-tag">div</span> style=<span class="c-attribute">"left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 54.7631%; overflow: hidden;"</span>&gt;
+    &lt;<span class="c-tag">iframe</span> src=<span class="c-attribute">"keyshot.23.html"</span>
+                 allowfullscreen
+                 style=<span class="c-attribute">"position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"</span>
+                 frameborder=<span class="c-attribute">"0"</span>
+                 scrolling=<span class="c-attribute">"no"</span>&gt;
+    &lt;/<span class="c-tag">iframe</span>&gt;
+  &lt;/<span class="c-tag">div</span>&gt;
+&lt;/<span class="c-tag">div</span>&gt;</pre>
+    </p>
+    <p>If you share your KeyShotXR via email, send the entire zipped 'keyshot.23' folder
+    to the recipient(s).</p>
+   <script>
+   // In cases where the mouse is in a drag state and dragged
+   // outside of the iframe the event is still activated
+   // when focusing back into the iframe. This will block the event until
+   // the mouse activates the event.
+   var blockEvent = true;
+   if (blockEvent) {
+     var overlay = document.getElementById("overlay");
+
+     document.addEventListener("mousedown", function(e) {
+       overlay.style.pointerEvents = "none";
+     }, false);
+
+     document.addEventListener("mouseup", function(e) {
+       overlay.style.pointerEvents = "auto";
+     }, false);
+   }
+   </script>
+  </body>
+</html>
