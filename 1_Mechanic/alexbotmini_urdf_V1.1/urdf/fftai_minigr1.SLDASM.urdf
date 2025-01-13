@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fftai_minigr1.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.4024E-06 0.00054898 -0.042272"
+        rpy="0 0 0" />
+      <mass
+        value="1.2205" />
+      <inertia
+        ixx="0.0043789"
+        ixy="-2.4463E-07"
+        ixz="4.0801E-07"
+        iyy="0.002838"
+        iyz="-2.0869E-05"
+        izz="0.0045167" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rightlink1">
+    <inertial>
+      <origin
+        xyz="0.0594420628881002 0.034533401712012 -0.00630428008375954"
+        rpy="0 0 0" />
+      <mass
+        value="0.509840592418631" />
+      <inertia
+        ixx="0.000669643310892188"
+        ixy="-0.000129685618842681"
+        ixz="1.09639828066877E-05"
+        iyy="0.00100108461211825"
+        iyz="1.33581646025291E-05"
+        izz="0.000779599614241243" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint1"
+    type="revolute">
+    <origin
+      xyz="-0.081153 -0.141 -0.071463"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightlink1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="96"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="rightlink2">
+    <inertial>
+      <origin
+        xyz="0.00150638112135018 -0.0545199451983754 0.0925094666423404"
+        rpy="0 0 0" />
+      <mass
+        value="0.959639677882016" />
+      <inertia
+        ixx="0.00345409150874404"
+        ixy="4.88034349080604E-06"
+        ixz="-3.76658218620116E-05"
+        iyy="0.00350890183497374"
+        iyz="0.000277153174639458"
+        izz="0.00119661283058245" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint2"
+    type="revolute">
+    <origin
+      xyz="0.061457 0.0026992 -0.1657"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="rightlink1" />
+    <child
+      link="rightlink2" />
+    <axis
+      xyz="0 -0.99481 0.10176" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="51"
+      velocity="6.17" />
+  </joint>
+  <link
+    name="rightlink3">
+    <inertial>
+      <origin
+        xyz="-0.0169788668954402 0.0131504745747969 0.092638307463068"
+        rpy="0 0 0" />
+      <mass
+        value="0.814993443206341" />
+      <inertia
+        ixx="0.00259546516752718"
+        ixy="-7.63648120351649E-05"
+        ixz="-3.96055575713375E-05"
+        iyy="0.00223717232859865"
+        iyz="-9.71194944207922E-05"
+        izz="0.00121662750784586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint3"
+    type="revolute">
+    <origin
+      xyz="0.024094 -0.019567 -0.14117"
+      rpy="0 0 0" />
+    <parent
+      link="rightlink2" />
+    <child
+      link="rightlink3" />
+    <axis
+      xyz="-0.017018 -0.10175 -0.99466" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="51"
+      velocity="6.17" />
+  </joint>
+  <link
+    name="rightlink4">
+    <inertial>
+      <origin
+        xyz="-0.02107 -0.018266 -0.118"
+        rpy="0 0 0" />
+      <mass
+        value="1.192" />
+      <inertia
+        ixx="0.0088929"
+        ixy="-0.00023311"
+        ixz="-0.00094746"
+        iyy="0.0082733"
+        iyz="-0.00081089"
+        izz="0.0016722" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rightlink3" />
+    <child
+      link="rightlink4" />
+    <axis
+      xyz="0.98186 -0.18959 0.0025948" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="96"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="rightlink5">
+    <inertial>
+      <origin
+        xyz="-0.00141875911499316 -0.00733911012341296 0.000612186381362401"
+        rpy="0 0 0" />
+      <mass
+        value="0.0173110583311115" />
+      <inertia
+        ixx="1.29924754459473E-06"
+        ixy="9.9481824730128E-08"
+        ixz="-5.06675119593671E-09"
+        iyy="1.79491581629449E-06"
+        iyz="-2.28054871242313E-08"
+        izz="1.53090432178549E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint5"
+    type="revolute">
+    <origin
+      xyz="-0.031112 -0.033177 -0.28606"
+      rpy="0 0 0" />
+    <parent
+      link="rightlink4" />
+    <child
+      link="rightlink5" />
+    <axis
+      xyz="-0.18917 -0.97855 0.081625" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="30"
+      velocity="13" />
+  </joint>
+  <link
+    name="rightlink6">
+    <inertial>
+      <origin
+        xyz="0.00271838660921525 0.0121894183170719 -0.0328415480999896"
+        rpy="0 0 0" />
+      <mass
+        value="0.435198681355299" />
+      <inertia
+        ixx="0.00141144798650743"
+        ixy="-0.000223453197294276"
+        ixz="2.27504850596137E-05"
+        iyy="0.000290740612952736"
+        iyz="0.000124403796711155"
+        izz="0.00162797670007103" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/rightlink6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightjoint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rightlink5" />
+    <child
+      link="rightlink6" />
+    <axis
+      xyz="-0.98186 0.18959 -0.0025948" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="30"
+      velocity="13" />
+  </joint>
+  <link
+    name="leftlink1">
+    <inertial>
+      <origin
+        xyz="-0.017592 -0.021793 0.0011878"
+        rpy="0 0 0" />
+      <mass
+        value="0.50984" />
+      <inertia
+        ixx="0.0010013"
+        ixy="-0.00013036"
+        ixz="7.5191E-06"
+        iyy="0.00066894"
+        iyz="6.5004E-06"
+        izz="0.00078008" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint1"
+    type="revolute">
+    <origin
+      xyz="0 0.091 -0.08"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftlink1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="96"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="leftlink2">
+    <inertial>
+      <origin
+        xyz="0.000784166400198932 0.0103930458656625 -0.0727783392523898"
+        rpy="0 0 0" />
+      <mass
+        value="0.959637760358257" />
+      <inertia
+        ixx="0.00345586101834131"
+        ixy="-4.17011436443649E-06"
+        ixz="2.39909756772755E-05"
+        iyy="0.00347578197828339"
+        iyz="0.000386165221019164"
+        izz="0.00122795828629075" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint2"
+    type="revolute">
+    <origin
+      xyz="-0.052 -0.081493 0.004184"
+      rpy="0 0 0" />
+    <parent
+      link="leftlink1" />
+    <child
+      link="leftlink2" />
+    <axis
+      xyz="0 -0.99853 0.054143" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="51"
+      velocity="6.17" />
+  </joint>
+  <link
+    name="leftlink3">
+    <inertial>
+      <origin
+        xyz="-0.0075101 -0.0019949 -0.049043"
+        rpy="0 0 0" />
+      <mass
+        value="0.81627" />
+      <inertia
+        ixx="0.0026051"
+        ixy="-4.1712E-05"
+        ixz="4.1728E-05"
+        iyy="0.0022377"
+        iyz="-6.0576E-05"
+        izz="0.0012067" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint3"
+    type="revolute">
+    <origin
+      xyz="0.0017265 0.069299 -0.16259"
+      rpy="0 0 0" />
+    <parent
+      link="leftlink2" />
+    <child
+      link="leftlink3" />
+    <axis
+      xyz="0.010886 -0.05414 -0.99847" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="51"
+      velocity="6.17" />
+  </joint>
+  <link
+    name="leftlink4">
+    <inertial>
+      <origin
+        xyz="0.016924 -0.0243 -0.11757"
+        rpy="0 0 0" />
+      <mass
+        value="1.192" />
+      <inertia
+        ixx="0.008942"
+        ixy="3.9722E-05"
+        ixz="0.00079997"
+        iyy="0.0081845"
+        iyz="-0.0010879"
+        izz="0.0017109" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint4"
+    type="revolute">
+    <origin
+      xyz="-0.025283 -0.0046859 -0.14224"
+      rpy="0 0 0" />
+    <parent
+      link="leftlink3" />
+    <child
+      link="leftlink4" />
+    <axis
+      xyz="-0.99366 0.11119 -0.016862" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="96"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="leftlink5">
+    <inertial>
+      <origin
+        xyz="-0.000843338698625379 -0.00738330684593827 0.00101279161661827"
+        rpy="0 0 0" />
+      <mass
+        value="0.0173110583311115" />
+      <inertia
+        ixx="1.28680322959468E-06"
+        ixy="5.92825626065024E-08"
+        ixz="-8.5305074008254E-09"
+        iyy="1.80410712063465E-06"
+        iyz="-3.76937980199382E-08"
+        izz="1.53415733244538E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint5"
+    type="revolute">
+    <origin
+      xyz="0.023273 -0.042222 -0.28583"
+      rpy="0 0 0" />
+    <parent
+      link="leftlink4" />
+    <child
+      link="leftlink5" />
+    <axis
+      xyz="0.99366 -0.11119 0.016862" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="30"
+      velocity="13" />
+  </joint>
+  <link
+    name="leftlink6">
+    <inertial>
+      <origin
+        xyz="0.00227470458831627 0.0169660390027294 -0.0369463505052474"
+        rpy="0 0 0" />
+      <mass
+        value="0.624087512177386" />
+      <inertia
+        ixx="0.00222489042718702"
+        ixy="-0.000212443048662945"
+        ixz="3.22972322548574E-05"
+        iyy="0.000415714524625207"
+        iyz="0.000313740765751974"
+        izz="0.00248278708474733" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fftai_minigr1.SLDASM/meshes/leftlink6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftjoint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="leftlink5" />
+    <child
+      link="leftlink6" />
+    <axis
+      xyz="0.11245 0.98444 -0.13504" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="30"
+      velocity="13" />
+  </joint>
+</robot>
