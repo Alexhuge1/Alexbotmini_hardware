@@ -28,5 +28,6 @@ A small robot specially for RL
 
 本项目由傅利叶智能科技有限公司赞助，alexbotmini是一款拟打算全开源的双足机器人（包含机械，硬件，控制，算法），重点在于研究步态算法以及轻松部署步态降低RealityGap而设计的，整机fftai_alexbot_mini下半身长度700mm，上半身长度500mm，整体符合人体比例设计。
 详细细节见doc中Readme_zh.pdf
+latest version document in https://ycn2a2hv98lx.feishu.cn/wiki/IRANwwUcWi8EpLkuGC3c3G3Envf
 
 
